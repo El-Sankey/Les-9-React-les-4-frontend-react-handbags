@@ -2,13 +2,12 @@ import {createLogger} from "vite";
 
 {/*============ stappenplan 2/Buttons ============*/}
 
-export function Button() {
+export function Button(type, onClick, text, disabled) {
     return (
-        <div>
-            <button type="button">bestSeller</button>
-            <button type="button">newCollection</button>
-            <button type="button" disabled={true}>soldOut</button>
-        </div>
+        <button
+            type="button" onClick={()=>console.log(text)}
+            disabled={disabled}>{text}
+        </button>
     )
 };
 
