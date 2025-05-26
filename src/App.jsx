@@ -1,12 +1,17 @@
 import './App.css'
-import Product from "react";
-import Title from "react"
+import './components/Button.css'
+import './components/Product.css'
+import './components/Title.css'
+
+import Product from "./components/Product.jsx"
+import Title from "./components/Title.jsx"
 import bag_1 from "./assets/bag_1.png"
 import bag_2 from "./assets/bag_2.png"
 import bag_3 from "./assets/bag_3.png"
 import bag_4 from "./assets/bag_4.png"
 import brand from "./assets/brand.png"
 import our_story from "./assets/our_story.png"
+
 
 
 function App() {
@@ -24,14 +29,14 @@ function App() {
 			</header>
 			{/*============ stappenplan 1/Producten ============*/}
 			<main>
-				<Product label="best seller" img={bag_1} alt="bag-img" nameOfBag="the handy bag" price="400"/>
-				<Product label="best seller" img={bag_2} alt="bag-img" nameOfBag="the stylish bag" price="200"/>
-				<Product label="new collection" img={bag_3} alt="bag-img" nameOfBag="the simple bag" price="300"/>
-				<Product label="new collection" img={bag_4} alt="bag-img" nameOfBag="the trandy bag" price="150"/>
+				<Product label="Best seller" img={bag_1} alt="bag-img" nameOfBag="the handy bag" price="400"/>
+				<Product label="Best seller" img={bag_2} alt="bag-img" nameOfBag="the stylish bag" price="200"/>
+				<Product label="New collection" img={bag_3} alt="bag-img" nameOfBag="the simple bag" price="300"/>
+				<Product label="New collection" img={bag_4} alt="bag-img" nameOfBag="the trandy bag" price="150"/>
 			</main>
 			{/*============ stappenplan 1/Tegels ============*/}
 			<footer>
-				<Title title="THE BRAND" text="Available in countless styles, from totes and satchels to clutches and crossbody bags, each type serves different needs and occasions."
+				<Title title="THE BRAND" text="Handbags have evolved from mere functional items into essential fashion statements that reflect personal style and status." text1="Available in countless styles, from totes and satchels to clutches and crossbody bags, each type serves different needs and occasions."
 				/>
 				<Title img={brand}/>
 				<Title img={our_story}/>

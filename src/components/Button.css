@@ -1,3 +1,4 @@
+
 button {
     border: 1px solid #BC4C2A;
     color:  #BC4C2A;
@@ -7,11 +8,14 @@ button {
     text-transform: lowercase;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #BC4C2A;
+    background-image: linear-gradient(to right, tan, red);
     color: white;
     transition: all .4s ease-in-out;
 }
+
 button:disabled {
     cursor: not-allowed;
     border-color: #D08169;
